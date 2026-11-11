@@ -1,0 +1,29 @@
+[project]
+name = "embedded-assignment2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "fabseman", email = "personal@fabseman.space" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "albumentations==2.0.8",
+    "h5py==3.14.0",
+    "matplotlib==3.11.2",
+    "numpy==2.5.4",
+    "opencv-python==5.0.0.93",
+    "pyserial==3.5",
+    "scikit-learn==1.9.1",
+    "snntorch==0.9.4",
+    "tensorflow==2.21.0",
+    "torch==2.12.0",
+    "tqdm==4.67.3",
+]
+
+[project.scripts]
+embedded-assignment2 = "embedded_assignment2:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
