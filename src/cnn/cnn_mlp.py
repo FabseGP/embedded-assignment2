@@ -81,13 +81,11 @@ from sklearn.metrics import (
 
 
 # ===================== EDIT THESE =====================
-ROOT = Path("../../datasets/training")
+ROOT = Path("datasets/training")
 
 CLASS_FOLDERS = [
-    "Full Cable",  # 0
-    "Left End",  # 1
-    "Right End",  # 2
-    "No Cable",  # 3
+    "rectangle",
+    "triangle",
 ]
 
 IMG_H, IMG_W = 60, 80
@@ -106,7 +104,7 @@ BINS_POOL_SIZE = (6, 8)
 # RUNS_DIR = Path("runs")
 # RUN_NAME_PREFIX = "tinycnn_bn_DW_PW_convGAP_5x5_4class_60x80"
 
-run_dir = Path("../../models/cnn")
+run_dir = Path("models/cnn")
 
 # ======================================================
 

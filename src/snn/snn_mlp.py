@@ -17,13 +17,11 @@ from snntorch import surrogate
 from tqdm import tqdm
 
 
-ROOT = Path("../../datasets/training")
+ROOT = Path("datasets/training")
 
 CLASS_FOLDERS = [
-    "Full Cable",
-    "Left End",
-    "Right End",
-    "No Cable",
+    "rectangle",
+    "triangle",
 ]
 
 IMG_H, IMG_W = 60, 80
@@ -50,7 +48,7 @@ EARLY_EXIT_CONFIDENCE = 0.70
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
-OUT_DIR = Path("../../models/snn")
+OUT_DIR = Path("models/snn")
 
 MODELS_DIR = OUT_DIR / "models"
 PLOTS_DIR = OUT_DIR / "plots"
